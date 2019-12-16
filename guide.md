@@ -47,7 +47,15 @@ We believe Degens offers numerous benefits over legacy betting exchanges such as
 
 ## How do I sign up?
 
-On Degens there is no need to sign-up. All betting is done 100% anonymously with no geographic restrictions.
+On Degens there is no need to sign-up. All you need is an Ethereum-enabled wallet program.
+
+### MetaMask
+
+On a computer we recommend using the [MetaMask](https://metamask.io/) browser extension.
+
+### Mobile
+
+On mobile devices most users use [Trust Wallet](https://trustwallet.com) or [MetaMask mobile](https://metamask.io/). Other mobile dApp browsers such as [Cipher Browser](https://www.cypherbrowser.com/) and [AlphaWallet](https://alphawallet.com/) are also supported.
 
 ## What cryptocurrency do I need?
 
@@ -61,11 +69,11 @@ Below is a quick video walk-through showing how you can start betting assuming y
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/3K7HSDmFzrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
-## Why can't I use bitcoin?
+## Why can't I use Bitcoin?
 
-Degens is unlike your typical sportsbook that accepts bitcoin as we use ethereum smart contracts. This technology has numerous benefits which aren't available when using Bitcoin.
+Degens is unlike your typical sportsbook that accepts Bitcoin as we use ethereum smart contracts. This technology has numerous benefits which aren't available when using Bitcoin.
 
-You can easily use your favorite crypto-exchange to exchange your bitcoin into ETH/DAI with some of the most popular ones being Coinbase and Binance.
+You can easily use your favorite crypto-exchange to exchange your Bitcoin into ETH/DAI with some of the most popular ones being Coinbase and Binance.
 
 
 # Betting
@@ -158,7 +166,7 @@ The simplest way to make a bet is to click on one of the blue squares and place 
 
 * The odds and amount have already been filled in for you based on the order you clicked. You should adjust the "stake" field to control how much you want to bet. The "profit" field will update indicating how much you will win if your bet is correct.
 * Since your odds are set as -126, only one order is "highlighted". If you reduce your odds to -132 then the next order will be highlighted also. You can make a single bet that matches against multiple orders at the same time, if your bet size is large enough. It will consume as much as possible of the order with better odds before moving on to the next order.
-* Click "Take" or "Make" to attempt your bet! If you use "Take" then you will send a transaction to the blockchain. You will need to pay gas (see our [#fees](fees section), but your odds will be the average of all the orders you selected, weighted by how much you are betting. If you click "Make" then you will not need to pay for gas, but somebody else must. To compensate, you will get the exact odds displayed in your betslip (no averaging up).
+* Click "Take" or "Make" to attempt your bet! If you use "Take" then you will send a transaction to the blockchain. You will need to pay gas (see our [#fees](fees section)), but your odds will be the average of all the orders you selected, weighted by how much you are betting. If you click "Make" then you will not need to pay for gas, but somebody else must. To compensate, you will get the exact odds displayed in your betslip (no averaging up).
 
 ### Market-making with Lay bets
 
@@ -170,11 +178,6 @@ When you make a lay bet, you are betting that an outcome will not happen. This w
 * The "profit" field has changed to "liability". This is the amount of money that you will need to put up as collateral if the offer is accepted. Stake will be the maximum amount that the other user can bet (liability adjusted for the odds you set).
 * When market making, be careful about expiry times! Good practice is to set fairly short expiry times for your orders so that you don't need to spend gas cancelling them often. But don't set them too short, since people need time to find your orders, and to get their bets mined on the blockchain. By default, the expiry is set at event start-time.
 
-# Mobile
-
-Yes, mobile is supported on Degens. Most users tend to use [Trust Wallet](https://trustwallet.com) or [MetaMask](https://metamask.io/). Other mobile dApp browsers such as [Cipher Browser](https://www.cypherbrowser.com/) and [AlphaWallet](https://alphawallet.com/) are also supported.
-
-Point your mobile browser of your choice to [degens.com](https://degens.com) and click Account to unlock your wallet and you are ready to go.
 
 # Fees
 
