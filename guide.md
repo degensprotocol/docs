@@ -180,9 +180,29 @@ Point your mobile browser of your choice to [degens.com](https://degens.com) and
 
 ## What commission does Degens charge?
 
-Degens is proud to offer the industry's lowest fees. We charge 0.25% on the claimed amount, which is approximately 0.5% of winnings
+Degens is proud to offer the industry's lowest fees. We are able to offer such low fees because Degens leverages the Ethereum blockchain and cryptocurrency, which eliminates many costs that affect legacy sports exchanges.
 
-We are able to offer such low fees because Degens leverages the power of the ethereum blockchain and crypto currency which eliminates costs that affect legacy sports exchanges.
+We charge <b>0.25%</b> on the claimed amount. The claimed amount is the sum of your stake plus your winnings. So, at even odds (+100), our 0.25% fee will be 0.5% of your winnings. Trades at different odds will have fees that are a different percentage of the winnings:
+
+|  Odds (American)  |  Odds (Decimal)  |  Fee (of claimed amount)  |  Fee (of winnings)
+|:----:|:----:|:----:|:----:|
+| +900 | 10.00 | 0.25% | 0.277%
+| +300 | 4.00 | 0.25% | 0.333%
+| +200 | 3.03 | 0.25% | 0.375%
+| +150 | 2.50 | 0.25% | 0.416%
+| +110 | 2.10 | 0.25% | 0.477%
+| +/-100 | 2.00 | 0.25% | 0.5%
+| -110 | 1.91 | 0.25% | 0.525%
+| -150 | 1.67 | 0.25% | 0.625%
+| -200 | 1.50 | 0.25% | 0.75%
+| -300 | 1.33 | 0.25% | 1%
+| -900 | 1.11 | 0.25% | 2.5%
+
+There are a few reasons why we charge fees based on the claimed amount, rather than winnings:
+
+* Charging commission on every trade would involve paying more gas fees per trade, and would complicate the smart contract and how odds are reported.
+* Unlike with centralized systems, deposits, withdrawals, and trade settlement are all handled by the blockchain, not by us. The service that we provide in order to earn the fees is the grading. Every time we grade a match, we put our reputation on the line and earn the grading fees for doing so. Charging fees for trades would thus not be fair to our customers.
+* If market makers were charged commissions on every trade, they would be double-charged when they are able to balance the book. By charging fees at grading time, only those who carried their positions until the end of the match are charged. Market maker gains made prior to the match are therefore commission-free.
 
 ## Transparency
 
@@ -191,32 +211,50 @@ On the Transactions screen, you can see the fees that were paid in any claim row
 <div style="text-align: center"><img src="./fees.png" /></div>
 
 * Here, a bet was placed with $16 at odds of -107. Since it won, we won $15. Claiming our original stake and winnings increased our balance by $31 ($15 + $16), from which a 0.25% fee was paid (0.0025 * $31 = $0.075).
-* Amounts are rounded to the nearest dollar, and fees to the nearest cent. You can see the exact amounts paid in Etherscan.
-
-## Comparison: Centralized Exchanges
-
-Unlike Degens which charges a fixed rate for all users, companies like BetFair charge different amounts depending on who you are and/or where you are from. Typically, the commission is at least 5% of winnings (approximately 10 times higher than Degens). However, BetFair has [many other charges](https://web.archive.org/web/20190519144654/https://www.betfair.com/aboutUs/Betfair.Charges/) that they levy:
-
-* Inactive account charges: If you haven't used your account in a while, they start to drain it until it reaches 0.
-* Transaction charges: If you do lots of trades, you need to pay more.
-* Premium charges: If you win a lot, BetFair takes a cut (up to 60% of your winnings).
-* Deposit/withdrawal charges: Getting your money in and/out is at their discretion, and they will charge you for this privilege if they feel like it.
-
-As you can see, BetFair is expensive, and even understanding how much you will pay is complicated!
-
-Other exchanges like Matchbook and Smarkets attempt to compete on fees, but they are still much higher than Degens, and more confusing.
+* Amounts are shown rounded to the nearest dollar, and fees to the nearest cent. However, on the blockchain all amounts are kept accurate to the billion-billionth of a dollar. You can see the exact amounts paid by clicking on the transaction block number, which takes you to the Etherscan page for a given transaction.
 
 ## Gas Fees
 
-To conduct a transaction on the ethereum blockchain, certain transactions require a gas fee which is paid in ETH, which is the native crypto currency of ethereum. This gas fee isn't paid to Degens, but is paid to the miners to ensure the security of the network.
+To conduct a transaction on the ethereum blockchain, certain transactions require a gas fee which is paid in ETH, the native crypto currency of ethereum. This gas fee isn't paid to Degens, but is paid to the miners to process your transaction.
 
-This gas fee is variable and depends on the congestion of the network at any given time. When you send transactions, your wallet software should allow you to select the gas price you will pay, although it is recommended to use at least the default to ensure your transactions are processed quickly.
+This gas fee is variable and depends on the congestion of the network at any given time. When you send transactions, your wallet software should allow you to select the gas price you will pay, although it is recommended to use at least the default to ensure your transactions are processed quickly. Gas conditions can be monitored on [ETH Gas Station](https://ethgasstation.info/).
 
-Gas conditions can be monitored on [ETH Gas Station](https://ethgasstation.info/).
+It is possible to use Degens without paying any gas, as described in our blog post: [Betting Without ETH](https://medium.com/@Degens/betting-without-eth-dais-new-permit-feature-5517293f3246). However, advanced users will usually want some ETH on hand for cancellations (which require gas) and to take trades (which can result in better odds than just making orders to be matched).
 
 ## Deposit/withdrawal Fees
 
-There are no deposit or withdrawal fees.
+In Degens you never actually deposit or withdraw money to us. When you enter into a bet, the money is moved directly from your wallet into our smart contract. When the match completes, the funds are claimed directly back into the winner's wallet. So there are no deposit or withdrawal fees charged by us. Instead, a small amount of gas is spent to update the balances during bets and claims.
+
+Other than this small amount of gas, there are no deposit or withdrawal fees to use Degens. When you convert your cryptocurrency to fiat currencies, or to other cryptocurrencies, you may pay additional fees to your exchange or provider at that time.
+
+## Comparison: Centralized Exchanges
+
+Unlike Degens which charges a fixed rate for all users, companies like BetFair charge different amounts depending on who you are and/or where you are from. Typically, the commission is at least 5% of winnings (approximately 10 times higher than Degens). However, BetFair has [many other charges](https://web.archive.org/web/20190519144654/https://www.betfair.com/aboutUs/Betfair.Charges/) that they levy in addition to the commission:
+
+* Deposit/withdrawal charges: Getting your money in or out is at their sole discretion, and they will charge you to do this.
+* Transaction charges: If you do lots of trades, you need to pay more.
+* Premium charges: If you win a lot, they will take a cut (up to 60% of your winnings).
+* Inactive account charges: If you haven't used your account in a while, they start to drain it until it reaches 0.
+
+As you can see, BetFair is expensive and even understanding how much you will pay is complicated!
+
+Other exchanges like Matchbook and Smarkets attempt to compete on fees but they are still much higher than Degens, and much more confusing.
+
+## Comparison: Other Blockchain Exchanges
+
+Like Degens, most fixed-odds blockchain-based exchanges have decided to charge commission based on the claimed amount.
+
+In general, Degens charges the smallest fees of them all, as you can see in the following table:
+
+|  Exchange  |  Fee (of claimed amount)  |  Fee (of winnings, at even odds)  |  Equivalent odds (for a bet at -110)
+|:----:|:----:|:----:|:----:|
+| Degens | 0.25% | 0.5% | -110.58
+| Augur* | 1.01% | 2.02% | -112.38
+| Competitor A | 2.0% | 4.0% | -114.82
+
+\* The fees on Augur are set by the market creator, so will vary. 1.01% is [typical](https://predictions.global/augur-markets/2019-nfl-week-14-will-the-dallas-cowboys-defeat-the-chicago-bears-0x654bbc746ce58cf52ba231dca92db90632cb277f).
+
+
 
 
 # Security
