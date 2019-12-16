@@ -190,7 +190,7 @@ On the Transactions screen, you can see the fees that were paid in any claim row
 
 <div style="text-align: center"><img src="./fees.png" /></div>
 
-* Here, a bet was placed with $16 at odds of -107. Since it won, we were able to claim $15. This increased our balance by $31 ($15 + $16), from which a 0.25% fee was paid (0.0025 * $31 = $0.075).
+* Here, a bet was placed with $16 at odds of -107. Since it won, we won $15. Claiming our original stake and winnings increased our balance by $31 ($15 + $16), from which a 0.25% fee was paid (0.0025 * $31 = $0.075).
 * Amounts are rounded to the nearest dollar, and fees to the nearest cent. You can see the exact amounts paid in Etherscan.
 
 ## Comparison: Centralized Exchanges
@@ -210,7 +210,9 @@ Other exchanges like Matchbook and Smarkets attempt to compete on fees, but they
 
 To conduct a transaction on the ethereum blockchain, certain transactions require a gas fee which is paid in ETH, which is the native crypto currency of ethereum. This gas fee isn't paid to Degens, but is paid to the miners to ensure the security of the network.
 
-This gas fee is variable and depends on the congestion of the network at any given time.
+This gas fee is variable and depends on the congestion of the network at any given time. When you send transactions, your wallet software should allow you to select the gas price you will pay, although it is recommended to use at least the default to ensure your transactions are processed quickly.
+
+Gas conditions can be monitored on [ETH Gas Station](https://ethgasstation.info/).
 
 ## Deposit/withdrawal Fees
 
