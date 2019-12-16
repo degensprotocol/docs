@@ -215,11 +215,11 @@ On the Transactions screen, you can see the fees that were paid in any claim row
 
 ## Gas Fees
 
-To conduct a transaction on the ethereum blockchain, certain transactions require a gas fee which is paid in ETH, the native crypto currency of ethereum. This gas fee isn't paid to Degens, but is paid to the miners to process your transaction.
+Sending a transaction to the ethereum blockchain requires a gas fee which is paid in ETH, the native crypto currency of ethereum. This gas fee isn't paid to Degens, but is paid to the miners to process your transaction.
 
-This gas fee is variable and depends on the congestion of the network at any given time. When you send transactions, your wallet software should allow you to select the gas price you will pay, although it is recommended to use at least the default to ensure your transactions are processed quickly. Gas conditions can be monitored on [ETH Gas Station](https://ethgasstation.info/).
+This gas fee is variable and depends on the congestion of the network at any given time. When you send transactions, your wallet software should allow you to select the gas price you will pay, although it is recommended to use at least the default to ensure your transactions are processed quickly. Gas price conditions can be monitored on [ETH Gas Station](https://ethgasstation.info/).
 
-It is possible to use Degens without paying any gas, as described in our blog post: [Betting Without ETH](https://medium.com/@Degens/betting-without-eth-dais-new-permit-feature-5517293f3246). However, advanced users will usually want some ETH on hand for cancellations (which require gas) and to take trades (which can result in better odds than just making orders to be matched).
+It is possible to use Degens without paying any gas, as described in our blog post: [Betting Without ETH](https://medium.com/@Degens/betting-without-eth-dais-new-permit-feature-5517293f3246). However, advanced users will usually want some ETH on hand for cancellations (which require gas) and to take trades (which can result in better odds than making orders to be matched).
 
 ## Deposit/withdrawal Fees
 
@@ -231,7 +231,7 @@ Other than this small amount of gas, there are no deposit or withdrawal fees to 
 
 Unlike Degens which charges a fixed rate for all users, companies like BetFair charge different amounts depending on who you are and/or where you are from. Typically, the commission is at least 5% of winnings (approximately 10 times higher than Degens). However, BetFair has [many other charges](https://web.archive.org/web/20190519144654/https://www.betfair.com/aboutUs/Betfair.Charges/) that they levy in addition to the commission:
 
-* Deposit/withdrawal charges: Getting your money in or out is at their sole discretion, and they will charge you to do this.
+* Deposit/withdrawal charges: Getting your money in or out is at their sole discretion, and they will charge you for this.
 * Transaction charges: If you do lots of trades, you need to pay more.
 * Premium charges: If you win a lot, they will take a cut (up to 60% of your winnings).
 * Inactive account charges: If you haven't used your account in a while, they start to drain it until it reaches 0.
@@ -244,7 +244,7 @@ Other exchanges like Matchbook and Smarkets attempt to compete on fees but they 
 
 Like Degens, most fixed-odds blockchain-based exchanges have decided to charge commission based on the claimed amount.
 
-In general, Degens charges the smallest fees of them all, as you can see in the following table:
+In general, Degens charges the smallest fees of them all:
 
 |  Exchange  |  Fee (of claimed amount)  |  Fee (of winnings, at even odds)  |  Equivalent odds (for a bet at -110)
 |:----:|:----:|:----:|:----:|
