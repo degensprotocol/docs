@@ -210,7 +210,7 @@ On the Transactions screen, you can see the fees that were paid in any claim row
 
 <div style="text-align: center"><img src="./fees.png" /></div>
 
-* Here, a bet was placed with $16 at odds of -107. Since it won, we won $15. Claiming our original stake and winnings increased our balance by $31 ($15 + $16), from which a 0.25% fee was paid (0.0025 * $31 = $0.075).
+* Here, a bet was placed with $16 at odds of -107. Since it won, our profit is $15. Claiming our original stake and winnings increased our balance by $31 ($15 + $16), from which a 0.25% fee was paid (0.0025 * $31 = $0.075).
 * Amounts are shown rounded to the nearest dollar, and fees to the nearest cent. However, on the blockchain all amounts are kept accurate to the billion-billionth of a dollar. You can see the exact amounts paid by clicking on the transaction block number, which takes you to the Etherscan page for a given transaction.
 
 ## Gas Fees
