@@ -1,6 +1,6 @@
 # Rules
 
-Degens bets will either pay out completely to the winner or be settled at the [cancellation price](#/protocol?id=finalization-prices). Unless otherwise posted, the cancellation price is 50, meaning positions are split evenly.
+Degens bets will either pay out completely to the winner or be settled at the [cancellation price](/protocol?id=finalization-prices). Unless otherwise posted, the cancellation price is 50, meaning positions are split evenly.
 
 Cancellation will occur in any of the following cases:
 
@@ -30,4 +30,4 @@ Cancellation will occur in any of the following cases:
 
 ## Baseball
 
-* Include extra-innings scores
+* Includes extra-innings runs
