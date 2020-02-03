@@ -166,7 +166,7 @@ The simplest way to make a bet is to click on one of the blue squares and place 
 
 * The odds and amount have already been filled in for you based on the order you clicked. You should adjust the "stake" field to control how much you want to bet. The "profit" field will update indicating how much you will win if your bet is correct.
 * Since your odds are set as -126, only one order is "highlighted". If you reduce your odds to -132 then the next order will be highlighted also. You can make a single bet that matches against multiple orders at the same time, if your bet size is large enough. It will consume as much as possible of the order with better odds before moving on to the next order.
-* Click "Take" or "Make" to attempt your bet! If you use "Take" then you will send a transaction to the blockchain. You will need to pay gas (see our [#fees](fees section)), but your odds will be the average of all the orders you selected, weighted by how much you are betting. If you click "Make" then you will not need to pay for gas, but somebody else must. To compensate, you will get the exact odds displayed in your betslip (no averaging up).
+* Click "Take" or "Make" to attempt your bet! If you use "Take" then you will send a transaction to the blockchain. You will need to pay gas (see our [fees section](#fees)), but your odds will be the average of all the orders you selected, weighted by how much you are betting. If you click "Make" then you will not need to pay for gas, but somebody else must. To compensate, you will get the exact odds displayed in your betslip (no averaging up).
 
 ### Market-making with Lay bets
 

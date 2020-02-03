@@ -188,7 +188,7 @@ As well as negative bid-ask spreads, there can also be bid-ask spreads of zero. 
 
 ## Amount at Risk
 
-When creating a trade, participants agree upon an integer price $Price_{trade}$ between 0 and 1e9 (non-inclusive). The amounts they must put at risk to form the trade depend upon this price, and are defined by this formula:
+When creating a trade, participants agree upon an integer price $[Price_{trade}]$ between 0 and 1e9 (non-inclusive). The amounts they must put at risk to form the trade depend upon this price, and are defined by this formula:
 
 $$ A_{buyer} = A_{seller} \times \frac{Price_{trade}}{1e9 - Price_{trade}} $$
 
@@ -203,7 +203,7 @@ $$ A_{total} = A_{buyer} + A_{seller} $$
 
 ## Finalization Prices
 
-When a match has finished, graders will agree on a finalization price $Price_{final}$. This means the buyer can claim the following amount:
+When a match has finished, graders will agree on a finalization price $[Price_{final}]$. This means the buyer can claim the following amount:
 
 $$ A_{total} \times \frac{Price_{final}}{1e9} $$
 
@@ -570,7 +570,7 @@ Positions are the result of trading, and they maintain the state of which accoun
 
 ### Effective Balances
 
-To create a trade, users normally require sufficient token balance, $Bal_{account}$, to match their amount at risk. However, if a trade is made for a match the user already has a position on, and the trade is in the opposite direction of the existing position, then the position itself may be used as collateral. In this way, it is always possible to create new trades to close out existing positions.
+To create a trade, users normally require sufficient token balance, $[Bal_{account}]$, to match their amount at risk. However, if a trade is made for a match the user already has a position on, and the trade is in the opposite direction of the existing position, then the position itself may be used as collateral. In this way, it is always possible to create new trades to close out existing positions.
 
 Here is how the effective balance is computed for a buyer:
 
@@ -592,12 +592,12 @@ Bal_{effective} = Bal_{account} +
   \end{cases}
 $$
 
-$Bal_{effective}$ is computed for both parties to a trade. These values are then used to determine the amounts that will be used in the trade, along with the remaining order amount, the maximum trade amount, and the order price.
+$[Bal_{effective}]$ is computed for both parties to a trade. These values are then used to determine the amounts that will be used in the trade, along with the remaining order amount, the maximum trade amount, and the order price.
 
 
 ### Position Updates
 
-When a trade is created, the positions for the participating accounts are updated by adding or substracting the total trade amount, $A_{total}$, as follows.
+When a trade is created, the positions for the participating accounts are updated by adding or substracting the total trade amount, $[A_{total}]$, as follows.
 
 For the account performing the buy side of the trade:
 
@@ -758,7 +758,7 @@ The `status` field of `LogTradeError` indicates why a trade failed. It will be o
 | ORDER_NO_BALANCE | The maker has insufficient effective balance | Fail: maker state |
 | ORDER_EXPIRED | The order's expiration timestamp has elapsed | Fail: time |
 | ORDER_CANCELLED | The order was explicitly cancelled by the maker (either by cancelling its orderGroup, or bulk cancelling by timestamp) | Fail: maker state |
-| AMOUNT_MALFORMED | The amount specified in the trade exceeds $2^{128} - 1$. Note that orders cannot specify amounts larger than this because they won't fit into the [execution packed](#execution-packed) encoding | Fail: malformed |
+| AMOUNT_MALFORMED | The amount specified in the trade exceeds $[2^{128} - 1]$. Note that orders cannot specify amounts larger than this because they won't fit into the [execution packed](#execution-packed) encoding | Fail: malformed |
 | SELF_TRADE | The taker and maker are the same address, which is disallowed | Fail: malformed |
 
 
@@ -830,7 +830,7 @@ The following are the interaction points where the Degens contract calls a token
 ### Token assumptions
 
 * The Degens contract will in certain cases give indivisible smallest units of tokens to an arbitrary party, or (rarely) allow them to be permanently lost as contract dust. Because of this, smallest token units should be of insignificant value. We recommend using tokens with 18 decimals, such as WETH or DAI.
-* Tokens should have sufficient value and/or limited `totalSupply` such that no address has a balance exceeding $2^{128} - 1$ smallest units. With tokens such as DAI and WETH this provides ample dynamic range: up to ~340 quintillion DAI or WETH. 
+* Tokens should have sufficient value and/or limited `totalSupply` such that no address has a balance exceeding $[2^{128} - 1]$ smallest units. With tokens such as DAI and WETH this provides ample dynamic range: up to ~340 quintillion DAI or WETH. 
 * Tokens that don't explicitly return a result from `transfer` or `transferFrom` are [not ERC-20 compliant](https://medium.com/coinmonks/missing-return-value-bug-at-least-130-tokens-affected-d67bf08521ca) and therefore may not work with Degens.
 
 ### Re-entrant Token Contracts
