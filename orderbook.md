@@ -33,9 +33,9 @@ Note that any `id` could have been chosen instead of `1`. It is the client's job
 
 The response type above was `rf`. There are 3 possible response types:
 
-    * `rf`: Request succeeded and the request is now finished
-    * `rr`: Request succeeded and there may be more responses in the future (with the same `id`)
-    * `re`: Error. The request is now finished, and the error reason is in the body (plain text, not JSON)
+* `rf`: Request succeeded and the request is now finished
+* `rr`: Request succeeded and there may be more responses in the future (with the same `id`)
+* `re`: Error. The request is now finished, and the error reason is in the body (plain text, not JSON)
 
 Since the protocol is asynchronous, `id` is used by the client to match up responses with their corresponding requests.
 
