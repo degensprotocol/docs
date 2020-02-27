@@ -258,6 +258,9 @@ In general, Degens charges the smallest fees of them all:
 \* The fees on Augur are set by the market creator, so will vary. 1.01% is [typical](https://predictions.global/augur-markets/2019-nfl-week-14-will-the-dallas-cowboys-defeat-the-chicago-bears-0x654bbc746ce58cf52ba231dca92db90632cb277f).
 
 
+# Rules
+
+Please see our [rules page](https://degensprotocol.github.io/docs/#/rules) for descriptions on how matches are graded for each sport we offer.
 
 
 # Security
