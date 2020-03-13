@@ -31,3 +31,7 @@ Cancellation will occur in any of the following cases:
 ## Baseball
 
 * Includes extra-innings runs
+
+## Boxing/MMA
+
+* Money-line: A win is any victory recognized by the offical organizers. This includes Knockout, Technical Knockout, Opponent Retired, Unanimous/Split/Majority/Technical Decision, and Opponent Disqualified. A draw will result in the money-line match being settled at the cancellation price.
