@@ -53,6 +53,8 @@ On Degens there is no need to sign-up. All you need is an Ethereum-enabled walle
 
 On a computer we recommend using the [MetaMask](https://metamask.io/) browser extension.
 
+See this [guide to getting started with MetaMask and Coinbase](https://www.youtube.com/watch?v=oLeoPPGRgrY).
+
 ### Mobile
 
 On mobile devices most users use [Trust Wallet](https://trustwallet.com) or [MetaMask mobile](https://metamask.io/). Other mobile dApp browsers such as [Cipher Browser](https://www.cypherbrowser.com/) and [AlphaWallet](https://alphawallet.com/) are also supported.
