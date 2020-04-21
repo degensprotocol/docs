@@ -36,3 +36,13 @@ Cancellation will occur in any of the following cases:
 
 * Money-line: A win is any victory recognized by the offical organizers. This includes Knockout, Technical Knockout, Opponent Retired, Unanimous/Split/Majority/Technical Decision, and Opponent Disqualified. A draw will result in the money-line match being settled at the cancellation price.
 * Initially announced results are final. Subsequently overturned decisions will not affect finalizations.
+
+## E-sports
+
+* Money-line is the winner of the match.
+* For spreads and totals, the number being bet on is the number of games or maps won. For example, in a best-of-3 match, the Total would be 2.5 and represents whether or not a third game is played.
+
+## Table Tennis
+
+* Money-line is the winner of the match.
+* For spreads and totals, the number being bet on is the number of games won.
