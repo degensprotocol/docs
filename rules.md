@@ -51,6 +51,8 @@ Cancellation will occur in any of the following cases:
 
 ### US Presidential Election 2020
 
+In this market "Trump" refers to the incumbent president Donald Trump, and "Field" refers to any other candidate.
+
 This market will be settled according to the candidate that has the most projected Electoral College votes after conclusion of the 2020 US presidential election. The use of the word "projected" is only to emphasize that any subsequent events such as a ‘faithless elector’ will have no effect on the settlement of this market. In the event that no Presidential candidate receives a majority of the projected Electoral College votes, this market will be settled on the person chosen as President in accordance with the procedures set out by the Twelfth Amendment to the United States Constitution.
 
 In the event of any ambiguity over the election results, Degens reserves the right to delay grading until we are confident that the election result will not change. Degens reserves the right to delay the grading until a President of the United States is sworn into office on or after January 20th, 2021.
