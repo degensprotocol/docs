@@ -2,13 +2,15 @@
 
 Degens bets will either pay out completely to the winner or be settled at the [cancellation price](/protocol?id=finalization-prices). The cancellation prices for each market can be seen by clicking on the "i" icon next to the market type.
 
-Cancellation will occur in any of the following cases:
+Cancellation of all markets on an event will occur in any of the following cases:
 
 * Cancelled or abandoned by league/organizers for any reason
 * Event start time postponed or moved to a different day
-* If an event is suspended before it is completed and is not resumed on the same day
+* If an event is suspended before it is completed and is not resumed within 24 hours
 * Any other material changes to the match details
 * Sport-specific cancellation reasons (see below)
+
+The scores used for finalization must be **final** scores. If an event is suspended mid-game (and not resumed as described above), all markets are cancelled, even markets like already-reached totals.
 
 ## Soccer
 
