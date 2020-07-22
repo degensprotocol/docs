@@ -32,7 +32,12 @@ The scores used for finalization must be **final** scores. If an event is suspen
 
 ## Baseball
 
-* Includes extra-innings runs
+* Any pitching changes will not affect a bet.
+* Extra innings count toward all bets.
+* If a game venue is changed then bets will action providing the home team is still designated as such. If the home and away team for a listed game are reversed, then bets placed based on the original listing will be deemed no action.
+* Money Line - There must be at least 5 full innings of play (unless the team batting second is leading after 4½ innings) for bets to have action.
+* Total and Run Line - The game must go at least 9 full innings (or 8½ innings if the team batting second is ahead) for bets to have action.
+* If the game is called after the necessary amount of innings for a bet to action has been reached, then the winner is determined by the score after the last full inning (unless the team batting second scores to tie or takes the lead in the bottom half of the inning, in which case the winner is determined by the score at the time the game is called).
 
 ## Boxing/MMA
 
