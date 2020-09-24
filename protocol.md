@@ -872,6 +872,8 @@ In the `claim` method, an array of [packed signatures](#signature-packing) must 
 
 Note: Unlike order signatures, grader signatures are not specific to particular chain IDs. This is so that in the event of a network fork, users can claim their winnings from existing positions on the new fork. However, grader signatures do embed the contract address, so can only be used across chains with the same Degens contract address.
 
+Note: When verifying that match details are acceptable, clients should ensure that none of the listed grader addresses are duplicated. This prevents a malicious match creator from creating a match that appears to have a higher grader quorum than it actually does.
+
 
 ### Claim Targets
 
